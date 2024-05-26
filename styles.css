@@ -1,0 +1,252 @@
+/* General Styles */
+html {
+    
+    scroll-behavior: smooth; /* Apply smooth scrolling behavior to the entire document */
+}
+
+
+body {
+    font-family: 'Courier New',;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    scrollbar-color: yellowgreen;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.p1{
+    font-size: 15px;
+}
+.logo{
+    position: static;
+    border-radius: 30px;
+    float: left;
+    width: 250px;
+    height: 180px;
+}
+#programs h3{
+    font-size: 20px;
+}
+#programs ul li{
+    border-radius: 20px;
+}
+#programs ul li:hover{
+    transform: scale(1.2);
+
+}
+
+#programs ul li ,#programs{
+    text-align: center;
+    list-style-type: none;
+    font-size: 15px;
+}
+#admissions,#contact ,#about{
+    text-align: center;
+}
+/* Header Styles */
+header {
+    background-color: rgb(136, 190, 28);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.up{
+    width: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    background: #f8f8f8;
+    border-radius: 60px;
+    opacity: 0.5;
+}
+.up:hover{
+    background: rgb(136, 190, 28);
+    opacity: 3;
+}
+.p4{
+    font-size: 15px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px;
+    display: inline;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: italic;
+    font-weight: bolder;
+    background-color: black;
+    padding: 5px;
+    border-radius: 40px;
+    opacity: 0.5;
+}
+nav ul li a:hover{
+    color: rgb(136, 190, 28);
+    opacity: 3;
+    font-size: 15.5px;
+}
+/* Main Content Styles */
+section {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    text-align: center;
+    background: rgb(136, 190, 28);
+    border-radius: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Faculty/Staff Section */
+.faculty-member {
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+#faculty ul li img{
+    display: flex;
+}
+
+.faculty-member h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.faculty-member img{
+    width: 400px;
+    border-radius: 40px;
+    border: 2px solid black;
+    
+}
+.faculty-member p {
+    font-size: 16px;
+}
+.image1{
+    width: 0px;
+}
+
+#faculty ,#faculty-members{
+    text-align: center;
+}
+.Requirements ol li{
+    margin-right: 20px;
+    text-align: inherit;
+    font-size: 20px;
+    color: black;
+}
+.Requirements h3{
+    font-size: 30px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(136, 190, 28);
+    color: #fff;
+    border-radius: 10px;
+}
+
+.link{
+    color: aqua;
+    text-decoration: none;
+    font-size: 15px;
+    opacity: 0.5;
+}
+.link:hover{
+    color: blue;
+    opacity: 2;
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        display: contents;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    section h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+    .p1{
+        font-size: 11.5px;
+    }
+    #programs ul li {
+        font-size: 20px;
+    }
+    #programs h3{
+        font-size: 40px;
+    }
+    .image1{
+        width: 20px;
+    }
+    .logo{
+        position: static;
+        border-radius: 30px;
+        float: initial;
+        width: 250px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul li {
+        display: contents;
+        margin-bottom: 10px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+}
